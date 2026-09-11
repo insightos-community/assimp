@@ -1,0 +1,25 @@
+{
+  "project": "assimp",
+  "version": "6.0.4",
+  "upstream": {
+    "repository": "https://github.com/assimp/assimp",
+    "tag": "v6.0.4",
+    "commit": "e0b52347c6e52de2827ec957a9ebf00ce3c54f79"
+  },
+  "library": "libassimp.so.6",
+  "build_dependencies": {
+    "zlib": {
+      "version": "1.3.2",
+      "tag": "musl-v1.3.2-1",
+      "url": "https://github.com/insightos-community/zlib/releases/download/musl-v1.3.2-1/zlib-1.3.2-musl-x86_64-prefix.tar.gz",
+      "sha256": "95aea6af7bc91f7f2aca2ef23f2b22d11faac7786b4c4d5a3d772e1a403238aa",
+      "source_commit": "9b5d8702a2cc520623d723f521f3ceecc80ea3e1"
+    }
+  },
+  "runtime_requirements": [
+    "musl x86_64",
+    "libstdc++.so.6",
+    "libgcc_s.so.1",
+    "zlib 1.3.2 (separate InsightOS release)"
+  ]
+}
