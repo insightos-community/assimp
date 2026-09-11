@@ -25,7 +25,7 @@ manifest={**spec,
     'elf_needed':{r['path']:r['needed'] for r in rows},
     'glibc_symbol_requirements':[],
     'apk_packages':(work/'logs/apk-packages.txt').read_text().splitlines(),
-    'tests':(work/'logs/tests.log').read_text().splitlines()[-8:],
+    'tests':(work/'logs/tests.log').read_text(encoding='utf-8', errors='replace').splitlines()[-8:],
 }
 dist=work/'dist'
 (dist/'build-manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
