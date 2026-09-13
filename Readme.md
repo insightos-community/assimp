@@ -121,3 +121,7 @@ Our license is based on the modified, __3-clause BSD__-License.
 An _informal_ summary is: do whatever you want, but include Assimp's license text with your product -
 and don't sue us if our code doesn't work. Note that, unlike LGPLed code, you may link statically to Assimp.
 For the legal details, see the `LICENSE` file.
+
+## Reproducible platform builds
+
+See [glibc, musl and macOS build instructions](README.build.md) for pinned source revisions, exact scripts, tool requirements, local commands, CI reproduction and platform support boundaries.
